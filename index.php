@@ -34,9 +34,11 @@ require_once __DIR__ . '/includes/header.php';
             </div>
         </div>
 
-        <div class="hero__avatar-placeholder" aria-hidden="true">
-            &#x1F9D1;&#x200D;&#x1F4BB;
-        </div>
+        <?php if (file_exists(__DIR__ . '/assets/avatar.jpg')): ?>
+        <img class="hero__avatar" src="/assets/avatar.jpg" alt="Luboš Jeřábek" width="200" height="200">
+        <?php else: ?>
+        <div class="hero__avatar-placeholder" aria-hidden="true">&#x1F9D1;&#x200D;&#x1F4BB;</div>
+        <?php endif; ?>
     </div>
 </section>
 
@@ -103,7 +105,7 @@ require_once __DIR__ . '/includes/header.php';
                 <button class="exp-header" aria-expanded="false">
                     <div class="exp-logo-wrap">
                         <span class="exp-logo-init" aria-hidden="true">ZO</span>
-                        <img class="exp-logo" src="/assets/logos/zopa.jpg" alt="" loading="lazy" onerror="this.style.opacity='0'">
+                        <img class="exp-logo" src="/assets/logos/zopa.png" alt="" loading="lazy" onerror="this.style.opacity='0'">
                     </div>
                     <div class="exp-meta">
                         <span class="exp-role">Quality Engineering Manager</span>
