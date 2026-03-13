@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Project Alpha",
+        "description": "A full-stack web application for managing team workflows. Built with a REST API backend and a responsive frontend.",
+        "tags": ["PHP", "MySQL", "JavaScript", "REST API"],
+        "github": "https://github.com/yourname/project-alpha",
+        "live": "https://alpha.yoursite.com",
+        "icon": "▲"
+    },
+    {
+        "name": "CLI Tool Kit",
+        "description": "A collection of productivity command-line tools written in Python. Includes file organizers, network utilities, and automation scripts.",
+        "tags": ["Python", "CLI", "Automation"],
+        "github": "https://github.com/yourname/cli-tool-kit",
+        "live": null,
+        "icon": "⬡"
+    },
+    {
+        "name": "DevDash",
+        "description": "A personal developer dashboard aggregating GitHub stats, open PRs, and task tracking in a single dark-themed interface.",
+        "tags": ["JavaScript", "GitHub API", "CSS"],
+        "github": "https://github.com/yourname/devdash",
+        "live": "https://devdash.yoursite.com",
+        "icon": "◈"
+    },
+    {
+        "name": "Static Site Generator",
+        "description": "A minimal static site generator built in PHP that converts Markdown files to HTML. Powers this very website's blog.",
+        "tags": ["PHP", "Markdown", "HTML"],
+        "github": "https://github.com/yourname/ssg",
+        "live": null,
+        "icon": "◻"
+    },
+    {
+        "name": "Open Source Contribution",
+        "description": "Added multi-language support and performance improvements to a popular open-source library used by thousands of developers.",
+        "tags": ["Open Source", "i18n", "Performance"],
+        "github": "https://github.com/yourname/oss-contrib",
+        "live": null,
+        "icon": "◯"
+    },
+    {
+        "name": "API Gateway",
+        "description": "A lightweight PHP-based API gateway providing rate limiting, caching, and request routing for microservices.",
+        "tags": ["PHP", "Redis", "Docker", "Microservices"],
+        "github": "https://github.com/yourname/api-gateway",
+        "live": null,
+        "icon": "◈"
+    }
+]
