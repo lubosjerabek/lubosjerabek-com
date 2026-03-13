@@ -1,4 +1,2 @@
 .env
-data/linkedin_token.json
-data/linkedin_posts_cache.json
 assets/avatar.jpg

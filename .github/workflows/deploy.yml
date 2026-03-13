@@ -12,16 +12,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Write the .env file from GitHub Secrets so it gets uploaded to the server.
-      # The file is never committed to git — it only exists during this workflow run.
-      - name: Write .env
-        run: |
-          cat > .env <<EOF
-          LINKEDIN_CLIENT_ID=${{ secrets.LINKEDIN_CLIENT_ID }}
-          LINKEDIN_CLIENT_SECRET=${{ secrets.LINKEDIN_CLIENT_SECRET }}
-          LINKEDIN_REDIRECT_URI=${{ secrets.LINKEDIN_REDIRECT_URI }}
-          EOF
-
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
@@ -40,5 +30,3 @@ jobs:
             **/.git*
             **/.git*/**
             .github/**
-            data/linkedin_token.json
-            data/linkedin_posts_cache.json

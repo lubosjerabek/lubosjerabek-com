@@ -28,7 +28,6 @@ $pageDescription = $pageDescription ?? 'Software engineer specializing in buildi
                 <li><a href="/#about"><span class="prompt">~/</span>about</a></li>
                 <li><a href="/#experience"><span class="prompt">~/</span>experience</a></li>
                 <li><a href="/recommendations.php"><span class="prompt">~/</span>recommendations</a></li>
-                <li><a href="/#blog"><span class="prompt">~/</span>blog</a></li>
                 <li><a href="/#contact"><span class="prompt">~/</span>contact</a></li>
             </ul>
         </div>

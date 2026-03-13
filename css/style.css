@@ -545,61 +545,6 @@ img { max-width: 100%; display: block; }
     font-weight: 600;
 }
 
-/* =========================================================
-   Blog Section
-   ========================================================= */
-.blog-grid {
-    display: grid;
-    gap: 1rem;
-}
-
-.post-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 1.5rem;
-    transition: border-color var(--transition);
-}
-.post-card:hover { border-color: var(--accent); }
-
-.post-card__date {
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    color: var(--text-muted);
-    margin-bottom: 0.5rem;
-}
-
-.post-card__text {
-    font-size: 0.9rem;
-    color: var(--text);
-    line-height: 1.7;
-    white-space: pre-wrap;
-    word-break: break-word;
-}
-
-.post-card__stats {
-    display: flex;
-    gap: 1rem;
-    margin-top: 0.75rem;
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    color: var(--text-muted);
-}
-
-.blog-more {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.blog-status {
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    padding: 1.5rem;
-    border: 1px dashed var(--border);
-    border-radius: var(--radius);
-    text-align: center;
-}
 
 /* =========================================================
    Contact Section
@@ -728,19 +673,6 @@ img { max-width: 100%; display: block; }
     padding-bottom: 2rem;
 }
 
-.blog-full-grid {
-    display: grid;
-    gap: 1.25rem;
-    padding-bottom: 5rem;
-}
-
-.post-card--full .post-card__text {
-    max-height: 200px;
-    overflow: hidden;
-    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
-}
-
 .post-card__expand {
     font-family: var(--font-mono);
     font-size: 0.75rem;
@@ -753,20 +685,6 @@ img { max-width: 100%; display: block; }
 }
 .post-card__expand:hover { color: var(--accent-hover); }
 
-/* =========================================================
-   Loading Spinner
-   ========================================================= */
-.spinner {
-    width: 20px;
-    height: 20px;
-    border: 2px solid var(--border);
-    border-top-color: var(--accent);
-    border-radius: 50%;
-    animation: spin 0.7s linear infinite;
-    display: inline-block;
-}
-
-@keyframes spin { to { transform: rotate(360deg); } }
 
 /* =========================================================
    Cursor blink

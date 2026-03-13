@@ -194,29 +194,6 @@ require_once __DIR__ . '/includes/header.php';
     </div>
 </section>
 
-<!-- ============================================================
-     BLOG (LinkedIn post preview)
-     ============================================================ -->
-<section class="section" id="blog">
-    <div class="container">
-        <h2 class="section-title">
-            <span class="prompt">~/</span>blog
-        </h2>
-        <p class="section-subtitle">Latest thoughts from LinkedIn.</p>
-
-        <div class="blog-grid" id="blogPreview">
-            <p class="blog-status">
-                <span class="spinner"></span>&nbsp; Loading posts&hellip;
-            </p>
-        </div>
-
-        <div class="blog-more">
-            <a href="/blog.php" class="btn btn--outline">
-                <span class="prompt">$</span> view-all-posts
-            </a>
-        </div>
-    </div>
-</section>
 
 <!-- ============================================================
      CONTACT

@@ -85,56 +85,6 @@
     window.addEventListener('scroll', handler, { passive: true });
 })();
 
-// -------------------------------------------------------
-// Blog preview on homepage
-// -------------------------------------------------------
-(function blogPreview() {
-    const container = document.getElementById('blogPreview');
-    if (!container) return;
-
-    function formatDate(iso) {
-        if (!iso) return '';
-        try {
-            return new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
-        } catch { return iso; }
-    }
-
-    function escapeHtml(str) {
-        return str
-            .replace(/&/g, '&amp;')
-            .replace(/</g, '&lt;')
-            .replace(/>/g, '&gt;');
-    }
-
-    fetch('/api/posts.php?count=3')
-        .then(r => r.json())
-        .then(data => {
-            if (!data.posts || !data.posts.length) {
-                container.innerHTML = '<p class="blog-status">No posts yet. Check back soon.</p>';
-                return;
-            }
-
-            container.innerHTML = data.posts.map(post => {
-                const preview = escapeHtml(post.text.slice(0, 280)) + (post.text.length > 280 ? '&hellip;' : '');
-                const stats = [];
-                if (post.likes    != null) stats.push('&#9829; ' + post.likes);
-                if (post.comments != null) stats.push('&#128172; ' + post.comments);
-
-                return `
-                    <article class="post-card">
-                        <div class="post-card__date">
-                            <span style="color:var(--green);font-family:var(--font-mono)">$</span>
-                            ${formatDate(post.date_iso)}
-                        </div>
-                        <div class="post-card__text">${preview}</div>
-                        ${stats.length ? `<div class="post-card__stats">${stats.join(' &nbsp;&middot;&nbsp; ')}</div>` : ''}
-                    </article>`;
-            }).join('');
-        })
-        .catch(() => {
-            container.innerHTML = '<p class="blog-status">Could not load posts right now.</p>';
-        });
-})();
 
 // -------------------------------------------------------
 // Contact form — async submit
@@ -211,7 +161,7 @@
 // Scroll-reveal for cards (IntersectionObserver)
 // -------------------------------------------------------
 (function scrollReveal() {
-    const els = document.querySelectorAll('.exp-card, .post-card, .contact-link');
+    const els = document.querySelectorAll('.exp-card, .contact-link');
     if (!els.length || !('IntersectionObserver' in window)) return;
 
     const style = document.createElement('style');
