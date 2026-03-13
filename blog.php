@@ -1,6 +1,6 @@
 <?php
-$pageTitle       = 'Blog — Your Name';
-$pageDescription = 'Thoughts, insights, and articles from Your Name — software engineer.';
+$pageTitle       = 'Blog — Luboš Jeřábek';
+$pageDescription = 'Thoughts and insights from Luboš Jeřábek — Engineering Manager, community advocate, and AI era navigator.';
 
 require_once __DIR__ . '/includes/header.php';
 ?>

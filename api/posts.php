@@ -24,11 +24,7 @@ try {
     $client = new LinkedInClient();
 
     if (!$client->hasToken()) {
-        http_response_code(503);
-        echo json_encode([
-            'error'   => 'not_authenticated',
-            'message' => 'LinkedIn is not connected. Visit /auth/linkedin-callback.php?action=login to authenticate.',
-        ]);
+        echo json_encode(['posts' => [], 'count' => 0]);
         exit;
     }
 

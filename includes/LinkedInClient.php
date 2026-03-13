@@ -112,18 +112,24 @@ class LinkedInClient
             return $this->loadCache();
         }
 
-        $personId = $this->getPersonId();
-        if (!$personId) {
-            throw new RuntimeException('Could not retrieve LinkedIn person ID.');
+        // Try live API; on any failure (e.g. missing r_member_social scope)
+        // fall back to whatever is in the cache, or return empty.
+        try {
+            $personId = $this->getPersonId();
+            if (!$personId) {
+                throw new RuntimeException('Could not retrieve LinkedIn person ID.');
+            }
+
+            $authorUrn = urlencode("urn:li:person:{$personId}");
+            $data = $this->apiGet("/ugcPosts?q=authors&authors=List({$authorUrn})&count={$count}&sortBy=LAST_MODIFIED");
+
+            $posts = $this->normalizePosts($data['elements'] ?? []);
+            $this->saveCache($posts);
+
+            return $posts;
+        } catch (Throwable) {
+            return file_exists($this->cacheFile) ? $this->loadCache() : [];
         }
-
-        $authorUrn = urlencode("urn:li:person:{$personId}");
-        $data = $this->apiGet("/ugcPosts?q=authors&authors=List({$authorUrn})&count={$count}&sortBy=LAST_MODIFIED");
-
-        $posts = $this->normalizePosts($data['elements'] ?? []);
-        $this->saveCache($posts);
-
-        return $posts;
     }
 
     // -------------------------------------------------------
