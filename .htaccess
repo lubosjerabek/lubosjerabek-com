@@ -2,6 +2,13 @@
 # (data/.htaccess and includes/.htaccess) to avoid interfering with
 # the Wedos root subdomain rewrite chain.
 
+# Force HTTPS
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
 # Deny direct access fallback
 <FilesMatch "\.(env|json)$">
     <IfModule mod_authz_core.c>
