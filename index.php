@@ -3,10 +3,6 @@ $pageTitle       = 'Luboš Jeřábek — Engineering Manager';
 $pageDescription = 'Engineering Manager with 14 years of experience building high-performing teams across the UK and Czech Republic. Focused on servant leadership, quality engineering, and the AI era.';
 
 require_once __DIR__ . '/includes/header.php';
-
-// Load projects from JSON
-$projectsRaw = file_get_contents(__DIR__ . '/data/projects.json');
-$projects    = json_decode($projectsRaw, true) ?? [];
 ?>
 
 <!-- ============================================================
@@ -29,10 +25,7 @@ $projects    = json_decode($projectsRaw, true) ?? [];
             </p>
 
             <div class="hero__cta">
-                <a href="#projects" class="btn btn--primary">
-                    <span class="prompt">$</span> view-projects
-                </a>
-                <a href="/recommendations.php" class="btn btn--outline">
+                <a href="/recommendations.php" class="btn btn--primary">
                     <span class="prompt">$</span> recommendations
                 </a>
                 <a href="#contact" class="btn btn--outline">
@@ -46,43 +39,6 @@ $projects    = json_decode($projectsRaw, true) ?? [];
 
         <div class="hero__avatar-placeholder" aria-hidden="true">
             &#x1F9D1;&#x200D;&#x1F4BB;
-        </div>
-    </div>
-</section>
-
-<!-- ============================================================
-     PROJECTS
-     ============================================================ -->
-<section class="section" id="projects">
-    <div class="container">
-        <h2 class="section-title">
-            <span class="prompt">~/</span>projects
-        </h2>
-        <p class="section-subtitle">Things I've built and shipped.</p>
-
-        <div class="projects-grid" id="projectsGrid">
-            <?php foreach ($projects as $project): ?>
-            <article class="project-card">
-                <div class="project-card__header">
-                    <span class="project-card__icon"><?= htmlspecialchars($project['icon'] ?? '◯') ?></span>
-                    <div class="project-card__links">
-                        <?php if (!empty($project['github'])): ?>
-                        <a href="<?= htmlspecialchars($project['github']) ?>" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-                        <?php endif; ?>
-                        <?php if (!empty($project['live'])): ?>
-                        <a href="<?= htmlspecialchars($project['live']) ?>" target="_blank" rel="noopener noreferrer">Live ↗</a>
-                        <?php endif; ?>
-                    </div>
-                </div>
-                <h3 class="project-card__name"><?= htmlspecialchars($project['name']) ?></h3>
-                <p class="project-card__desc"><?= htmlspecialchars($project['description']) ?></p>
-                <div class="project-card__tags">
-                    <?php foreach ($project['tags'] as $tag): ?>
-                    <span class="tag"><?= htmlspecialchars($tag) ?></span>
-                    <?php endforeach; ?>
-                </div>
-            </article>
-            <?php endforeach; ?>
         </div>
     </div>
 </section>
