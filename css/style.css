@@ -97,7 +97,7 @@ img { max-width: 100%; display: block; }
     background: rgba(13, 17, 23, 0.85);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
-    z-index: 100;
+    z-index: 1000;
     transition: background var(--transition);
 }
 
@@ -906,17 +906,18 @@ img { max-width: 100%; display: block; }
     .nav__toggle { display: flex; }
 
     .nav__links {
-        position: fixed;
-        top: var(--nav-h);
+        position: absolute;
+        top: 100%;
         left: 0;
         right: 0;
-        background: var(--surface);
+        background: var(--bg);
         border-bottom: 1px solid var(--border);
         flex-direction: column;
         gap: 0;
         padding: 1rem 0;
         transform: translateY(-110%);
         transition: transform var(--transition);
+        z-index: 99;
     }
     .nav__links.open { transform: translateY(0); }
     .nav__links li { padding: 0; }
