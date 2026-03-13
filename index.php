@@ -55,11 +55,11 @@ require_once __DIR__ . '/includes/header.php';
 
         <div class="exp-stack">
 
-            <article class="exp-card exp-card--open" style="--brand: #F97316">
+            <article class="exp-card exp-card--open" style="--brand: #FF6200">
                 <button class="exp-header" aria-expanded="true">
                     <div class="exp-logo-wrap">
                         <span class="exp-logo-init" aria-hidden="true">SW</span>
-                        <img class="exp-logo" src="https://logo.clearbit.com/solarwinds.com" alt="" loading="lazy" onerror="this.style.opacity='0'">
+                        <img class="exp-logo" src="/assets/logos/solarwinds.png" alt="" loading="lazy" onerror="this.style.opacity='0'">
                     </div>
                     <div class="exp-meta">
                         <span class="exp-role">Software Engineering Manager</span>
@@ -79,11 +79,11 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
             </article>
 
-            <article class="exp-card" style="--brand: #00803C">
+            <article class="exp-card" style="--brand: #c20016">
                 <button class="exp-header" aria-expanded="false">
                     <div class="exp-logo-wrap">
                         <span class="exp-logo-init" aria-hidden="true">HO</span>
-                        <img class="exp-logo" src="https://logo.clearbit.com/howdens.com" alt="" loading="lazy" onerror="this.style.opacity='0'">
+                        <img class="exp-logo" src="/assets/logos/howdens.png" alt="" loading="lazy" onerror="this.style.opacity='0'">
                     </div>
                     <div class="exp-meta">
                         <span class="exp-role">Senior Digital QA Manager</span>
@@ -102,11 +102,11 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
             </article>
 
-            <article class="exp-card" style="--brand: #7B3FE4">
+            <article class="exp-card" style="--brand: #68b631">
                 <button class="exp-header" aria-expanded="false">
                     <div class="exp-logo-wrap">
                         <span class="exp-logo-init" aria-hidden="true">ZO</span>
-                        <img class="exp-logo" src="https://logo.clearbit.com/zopa.com" alt="" loading="lazy" onerror="this.style.opacity='0'">
+                        <img class="exp-logo" src="/assets/logos/zopa.jpg" alt="" loading="lazy" onerror="this.style.opacity='0'">
                     </div>
                     <div class="exp-meta">
                         <span class="exp-role">Quality Engineering Manager</span>
@@ -125,11 +125,11 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
             </article>
 
-            <article class="exp-card" style="--brand: #2563EB">
+            <article class="exp-card" style="--brand: #1c2e23">
                 <button class="exp-header" aria-expanded="false">
                     <div class="exp-logo-wrap">
                         <span class="exp-logo-init" aria-hidden="true">JJ</span>
-                        <img class="exp-logo" src="https://logo.clearbit.com/jandjglobalfulfilment.com" alt="" loading="lazy" onerror="this.style.opacity='0'">
+                        <img class="exp-logo" src="/assets/logos/jj.svg" alt="" loading="lazy" onerror="this.style.opacity='0'">
                     </div>
                     <div class="exp-meta">
                         <span class="exp-role">Lead Test Engineer</span>
@@ -147,11 +147,11 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
             </article>
 
-            <article class="exp-card" style="--brand: #CC0000">
+            <article class="exp-card" style="--brand: #ED0000">
                 <button class="exp-header" aria-expanded="false">
                     <div class="exp-logo-wrap">
                         <span class="exp-logo-init" aria-hidden="true">VM</span>
-                        <img class="exp-logo" src="https://logo.clearbit.com/virginmedia.com" alt="" loading="lazy" onerror="this.style.opacity='0'">
+                        <img class="exp-logo" src="/assets/logos/virginmedia.jpg" alt="" loading="lazy" onerror="this.style.opacity='0'">
                     </div>
                     <div class="exp-meta">
                         <span class="exp-role">Technical Test Lead</span>
@@ -169,11 +169,11 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
             </article>
 
-            <article class="exp-card" style="--brand: #003DA5">
+            <article class="exp-card" style="--brand: #E5173F">
                 <button class="exp-header" aria-expanded="false">
                     <div class="exp-logo-wrap">
                         <span class="exp-logo-init" aria-hidden="true">AG</span>
-                        <img class="exp-logo" src="https://logo.clearbit.com/theaccessgroup.com" alt="" loading="lazy" onerror="this.style.opacity='0'">
+                        <img class="exp-logo" src="/assets/logos/access-group.png" alt="" loading="lazy" onerror="this.style.opacity='0'">
                     </div>
                     <div class="exp-meta">
                         <span class="exp-role">Technical QA Analyst</span>
