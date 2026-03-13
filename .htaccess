@@ -1,13 +1,6 @@
-# Deny direct browser access to sensitive directories
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-
-    # Block access to data/ directory
-    RewriteRule ^data/ - [F,L]
-
-    # Block access to includes/ directory
-    RewriteRule ^includes/ - [F,L]
-</IfModule>
+# Sensitive directories are protected by their own .htaccess files
+# (data/.htaccess and includes/.htaccess) to avoid interfering with
+# the Wedos root subdomain rewrite chain.
 
 # Deny direct access fallback
 <FilesMatch "\.(env|json)$">
