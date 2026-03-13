@@ -26,7 +26,7 @@ $pageDescription = $pageDescription ?? 'Software engineer specializing in buildi
             </button>
             <ul class="nav__links" id="navLinks">
                 <li><a href="/#about"><span class="prompt">~/</span>about</a></li>
-                <li><a href="/#projects"><span class="prompt">~/</span>projects</a></li>
+                <li><a href="/#experience"><span class="prompt">~/</span>experience</a></li>
                 <li><a href="/recommendations.php"><span class="prompt">~/</span>recommendations</a></li>
                 <li><a href="/#blog"><span class="prompt">~/</span>blog</a></li>
                 <li><a href="/#contact"><span class="prompt">~/</span>contact</a></li>
