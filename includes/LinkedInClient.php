@@ -22,7 +22,7 @@ class LinkedInClient
     private const AUTH_URL  = 'https://www.linkedin.com/oauth/v2/authorization';
     private const TOKEN_URL = 'https://www.linkedin.com/oauth/v2/accessToken';
     private const API_BASE  = 'https://api.linkedin.com/v2';
-    private const SCOPES    = ['openid', 'profile', 'email', 'r_member_social'];
+    private const SCOPES    = ['openid', 'profile', 'w_member_social'];
 
     public function __construct()
     {
