@@ -195,10 +195,23 @@
 })();
 
 // -------------------------------------------------------
+// Experience accordion
+// -------------------------------------------------------
+(function expAccordion() {
+    document.querySelectorAll('.exp-header').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const card   = btn.closest('.exp-card');
+            const isOpen = card.classList.toggle('exp-card--open');
+            btn.setAttribute('aria-expanded', isOpen);
+        });
+    });
+})();
+
+// -------------------------------------------------------
 // Scroll-reveal for cards (IntersectionObserver)
 // -------------------------------------------------------
 (function scrollReveal() {
-    const els = document.querySelectorAll('.project-card, .post-card, .contact-link');
+    const els = document.querySelectorAll('.exp-card, .post-card, .contact-link');
     if (!els.length || !('IntersectionObserver' in window)) return;
 
     const style = document.createElement('style');

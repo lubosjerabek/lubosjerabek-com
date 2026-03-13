@@ -53,115 +53,139 @@ require_once __DIR__ . '/includes/header.php';
         </h2>
         <p class="section-subtitle">14 years building engineering teams across the UK and Czech Republic.</p>
 
-        <div class="timeline">
+        <div class="exp-stack">
 
-            <article class="timeline-item">
-                <div class="timeline-dot timeline-dot--current"></div>
-                <div class="timeline-body">
-                    <div class="timeline-head">
-                        <div>
-                            <h3 class="timeline-role">Software Engineering Manager</h3>
-                            <span class="timeline-company">SolarWinds &mdash; Brno, CZ</span>
-                        </div>
-                        <span class="timeline-period">2025 &ndash; present</span>
+            <article class="exp-card exp-card--open" style="--brand: #F97316">
+                <button class="exp-header" aria-expanded="true">
+                    <div class="exp-logo-wrap">
+                        <span class="exp-logo-init" aria-hidden="true">SW</span>
+                        <img class="exp-logo" src="https://logo.clearbit.com/solarwinds.com" alt="" loading="lazy" onerror="this.style.opacity='0'">
                     </div>
-                    <ul class="timeline-list">
-                        <li>Leading a team of 10 engineers building interactive product demos for a global observability platform.</li>
-                        <li>Driving AI adoption — guiding the team through AI coding tools and experimental workflows.</li>
-                        <li>Lead of the internal Agile community and co-lead of the Young Managers community.</li>
-                        <li>Public speaker and workshop facilitator on AI coding, Agile delivery, and Quality Engineering.</li>
-                        <li>Internal advocate for Mental Health and Neurodivergence awareness, implementing training for people leaders.</li>
+                    <div class="exp-meta">
+                        <span class="exp-role">Software Engineering Manager</span>
+                        <span class="exp-company">SolarWinds &mdash; Brno, CZ</span>
+                    </div>
+                    <span class="exp-period exp-period--current">2025 &ndash; present</span>
+                    <svg class="exp-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="exp-body">
+                    <ul class="exp-list">
+                        <li>Leading a team of <strong>10 engineers</strong> building <strong>interactive product demos</strong> for a global <strong>observability platform</strong>.</li>
+                        <li>Driving <strong>AI adoption</strong> — guiding the team through <strong>AI coding tools</strong> and experimental workflows.</li>
+                        <li>Lead of the internal <strong>Agile community</strong> and co-lead of the <strong>Young Managers community</strong>.</li>
+                        <li>Public speaker and workshop facilitator on <strong>AI coding</strong>, <strong>Agile delivery</strong>, and <strong>Quality Engineering</strong>.</li>
+                        <li>Internal advocate for <strong>Mental Health</strong> and <strong>Neurodivergence</strong> awareness, implementing training for people leaders.</li>
                     </ul>
                 </div>
             </article>
 
-            <article class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-body">
-                    <div class="timeline-head">
-                        <div>
-                            <h3 class="timeline-role">Senior Digital QA Manager</h3>
-                            <span class="timeline-company">Howdens &mdash; Raunds, UK</span>
-                        </div>
-                        <span class="timeline-period">2024 &ndash; 2025</span>
+            <article class="exp-card" style="--brand: #00803C">
+                <button class="exp-header" aria-expanded="false">
+                    <div class="exp-logo-wrap">
+                        <span class="exp-logo-init" aria-hidden="true">HO</span>
+                        <img class="exp-logo" src="https://logo.clearbit.com/howdens.com" alt="" loading="lazy" onerror="this.style.opacity='0'">
                     </div>
-                    <ul class="timeline-list">
-                        <li>Defined a multi-year Quality Strategy to modernize the automation stack using Python, Playwright, and Appium.</li>
-                        <li>Managed 9 direct reports; introduced a career development matrix to improve retention and skill growth.</li>
-                        <li>Negotiated vendor contracts and conducted budget assessments resulting in significant annual cost savings.</li>
-                        <li>Assessed engineering maturity and redefined hiring strategies to align with modern delivery standards.</li>
+                    <div class="exp-meta">
+                        <span class="exp-role">Senior Digital QA Manager</span>
+                        <span class="exp-company">Howdens &mdash; Raunds, UK</span>
+                    </div>
+                    <span class="exp-period">2024 &ndash; 2025</span>
+                    <svg class="exp-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="exp-body">
+                    <ul class="exp-list">
+                        <li>Defined a multi-year <strong>Quality Strategy</strong> to modernise the automation stack using <strong>Python, Playwright, and Appium</strong>.</li>
+                        <li>Managed <strong>9 direct reports</strong>; introduced a <strong>career development matrix</strong> to improve retention and skill growth.</li>
+                        <li>Negotiated vendor contracts and budget assessments resulting in significant <strong>annual cost savings</strong>.</li>
+                        <li>Assessed <strong>engineering maturity</strong> and redefined hiring strategies to align with modern delivery standards.</li>
                     </ul>
                 </div>
             </article>
 
-            <article class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-body">
-                    <div class="timeline-head">
-                        <div>
-                            <h3 class="timeline-role">Quality Engineering Manager</h3>
-                            <span class="timeline-company">Zopa Bank &mdash; London, UK</span>
-                        </div>
-                        <span class="timeline-period">2023 &ndash; 2024</span>
+            <article class="exp-card" style="--brand: #7B3FE4">
+                <button class="exp-header" aria-expanded="false">
+                    <div class="exp-logo-wrap">
+                        <span class="exp-logo-init" aria-hidden="true">ZO</span>
+                        <img class="exp-logo" src="https://logo.clearbit.com/zopa.com" alt="" loading="lazy" onerror="this.style.opacity='0'">
                     </div>
-                    <ul class="timeline-list">
-                        <li>Managed a team of 6 across three tribes, establishing Quality KPIs and participating in the EM guild.</li>
-                        <li>Championed the migration from Selenium to Playwright to improve execution speed and reliability.</li>
-                        <li>Advocated for shift-left testing and optimized incident management efficiency.</li>
-                        <li>Led Quality Engineering workshops within the QA Chapter to standardize practices.</li>
+                    <div class="exp-meta">
+                        <span class="exp-role">Quality Engineering Manager</span>
+                        <span class="exp-company">Zopa Bank &mdash; London, UK</span>
+                    </div>
+                    <span class="exp-period">2023 &ndash; 2024</span>
+                    <svg class="exp-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="exp-body">
+                    <ul class="exp-list">
+                        <li>Managed a <strong>team of 6 across three tribes</strong>, establishing <strong>Quality KPIs</strong> and participating in the EM guild.</li>
+                        <li>Championed the migration from <strong>Selenium to Playwright</strong> to improve execution speed and reliability.</li>
+                        <li>Advocated for <strong>shift-left testing</strong> and optimised incident management efficiency.</li>
+                        <li>Led <strong>Quality Engineering workshops</strong> within the QA Chapter to standardise practices across teams.</li>
                     </ul>
                 </div>
             </article>
 
-            <article class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-body">
-                    <div class="timeline-head">
-                        <div>
-                            <h3 class="timeline-role">Lead Test Engineer</h3>
-                            <span class="timeline-company">J&amp;J Global Fulfilment &mdash; Northampton, UK</span>
-                        </div>
-                        <span class="timeline-period">2021 &ndash; 2023</span>
+            <article class="exp-card" style="--brand: #2563EB">
+                <button class="exp-header" aria-expanded="false">
+                    <div class="exp-logo-wrap">
+                        <span class="exp-logo-init" aria-hidden="true">JJ</span>
+                        <img class="exp-logo" src="https://logo.clearbit.com/jandjglobalfulfilment.com" alt="" loading="lazy" onerror="this.style.opacity='0'">
                     </div>
-                    <ul class="timeline-list">
-                        <li>Founded the QA department from scratch, including CI/CD pipelines and Python/Robot Framework test packs.</li>
-                        <li>Acted as de-facto Engineering Manager, leading resourcing for QA and supporting Dev/BA hiring.</li>
-                        <li>Implemented Agile delivery workflows in Jira and tracked department-wide performance KPIs.</li>
+                    <div class="exp-meta">
+                        <span class="exp-role">Lead Test Engineer</span>
+                        <span class="exp-company">J&amp;J Global Fulfilment &mdash; Northampton, UK</span>
+                    </div>
+                    <span class="exp-period">2021 &ndash; 2023</span>
+                    <svg class="exp-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="exp-body">
+                    <ul class="exp-list">
+                        <li>Founded the <strong>QA department from scratch</strong>, including <strong>CI/CD pipelines</strong> and <strong>Python/Robot Framework</strong> test packs.</li>
+                        <li>Acted as de-facto <strong>Engineering Manager</strong>, leading resourcing for QA and supporting Dev/BA hiring.</li>
+                        <li>Implemented <strong>Agile delivery workflows</strong> in Jira and tracked department-wide <strong>performance KPIs</strong>.</li>
                     </ul>
                 </div>
             </article>
 
-            <article class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-body">
-                    <div class="timeline-head">
-                        <div>
-                            <h3 class="timeline-role">Technical Test Lead</h3>
-                            <span class="timeline-company">Virgin Media &mdash; Hemel Hempstead, UK</span>
-                        </div>
-                        <span class="timeline-period">2019 &ndash; 2021</span>
+            <article class="exp-card" style="--brand: #CC0000">
+                <button class="exp-header" aria-expanded="false">
+                    <div class="exp-logo-wrap">
+                        <span class="exp-logo-init" aria-hidden="true">VM</span>
+                        <img class="exp-logo" src="https://logo.clearbit.com/virginmedia.com" alt="" loading="lazy" onerror="this.style.opacity='0'">
                     </div>
-                    <ul class="timeline-list">
-                        <li>Key contributor to the organisation's Agile transformation while managing a team of 5.</li>
-                        <li>Introduced visual regression testing and advanced estimation techniques.</li>
-                        <li>Acted as Scrum Master for high-priority projects and managed internal and external resourcing.</li>
+                    <div class="exp-meta">
+                        <span class="exp-role">Technical Test Lead</span>
+                        <span class="exp-company">Virgin Media &mdash; Hemel Hempstead, UK</span>
+                    </div>
+                    <span class="exp-period">2019 &ndash; 2021</span>
+                    <svg class="exp-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="exp-body">
+                    <ul class="exp-list">
+                        <li>Key contributor to the organisation's <strong>Agile transformation</strong> while managing a <strong>team of 5</strong>.</li>
+                        <li>Introduced <strong>visual regression testing</strong> and advanced estimation techniques.</li>
+                        <li>Acted as <strong>Scrum Master</strong> for high-priority projects and managed internal and external resourcing.</li>
                     </ul>
                 </div>
             </article>
 
-            <article class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-body">
-                    <div class="timeline-head">
-                        <div>
-                            <h3 class="timeline-role">Technical QA Analyst</h3>
-                            <span class="timeline-company">Access Group &mdash; Harpenden, UK</span>
-                        </div>
-                        <span class="timeline-period">2016 &ndash; 2019</span>
+            <article class="exp-card" style="--brand: #003DA5">
+                <button class="exp-header" aria-expanded="false">
+                    <div class="exp-logo-wrap">
+                        <span class="exp-logo-init" aria-hidden="true">AG</span>
+                        <img class="exp-logo" src="https://logo.clearbit.com/theaccessgroup.com" alt="" loading="lazy" onerror="this.style.opacity='0'">
                     </div>
-                    <ul class="timeline-list">
-                        <li>Company go-to person for Selenium and REST API automation.</li>
-                        <li>Coached junior team members on technical skills and Agile best practices.</li>
+                    <div class="exp-meta">
+                        <span class="exp-role">Technical QA Analyst</span>
+                        <span class="exp-company">Access Group &mdash; Harpenden, UK</span>
+                    </div>
+                    <span class="exp-period">2016 &ndash; 2019</span>
+                    <svg class="exp-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="exp-body">
+                    <ul class="exp-list">
+                        <li>Company go-to person for <strong>Selenium</strong> and <strong>REST API automation</strong>.</li>
+                        <li>Coached junior team members on <strong>technical skills</strong> and <strong>Agile best practices</strong>.</li>
                     </ul>
                 </div>
             </article>
