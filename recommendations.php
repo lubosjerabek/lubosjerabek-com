@@ -68,9 +68,10 @@ function format_date(string $date): string {
                     </div>
                 </div>
                 <?php
-                    $full  = htmlspecialchars($rec['text']);
-                    $short = htmlspecialchars(mb_substr($rec['text'], 0, 300));
-                    $needs = mb_strlen($rec['text']) > 300;
+                    $text  = trim($rec['text']);
+                    $full  = htmlspecialchars($text);
+                    $short = htmlspecialchars(mb_substr($text, 0, 300));
+                    $needs = mb_strlen($text) > 300;
                     $id    = 'rec-' . $i;
                 ?>
                 <blockquote class="rec-quote" id="<?= $id ?>">
@@ -79,7 +80,7 @@ function format_date(string $date): string {
                 <?php if ($needs): ?>
                 <button class="post-card__expand"
                         data-target="<?= $id ?>"
-                        data-full="<?= htmlspecialchars($rec['text'], ENT_QUOTES) ?>">
+                        data-full="<?= htmlspecialchars(trim($rec['text']), ENT_QUOTES) ?>">
                     read more ↓
                 </button>
                 <?php endif; ?>

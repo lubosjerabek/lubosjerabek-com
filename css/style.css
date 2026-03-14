@@ -96,6 +96,7 @@ img { max-width: 100%; display: block; }
     height: var(--nav-h);
     border-bottom: 1px solid var(--border);
     z-index: 1000;
+    background: rgba(13, 17, 23, 0.85);
 }
 
 .nav::before {
@@ -941,7 +942,10 @@ img { max-width: 100%; display: block; }
         text-align: center;
         padding-block: 3rem;
     }
-    .hero__avatar-placeholder, .hero__avatar { margin-inline: auto; }
+    .hero__avatar-placeholder, .hero__avatar {
+        margin-inline: auto;
+        justify-self: center;
+    }
     .hero__bio { margin-inline: auto; }
     .hero__cta { justify-content: center; }
 
